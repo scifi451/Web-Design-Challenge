@@ -1,0 +1,35 @@
+.box {
+    height: 550px;
+    padding: 20px;
+    color: black;
+    background: white;
+    margin-top: 50px;
+  }
+  .box2 {
+    height: 625px;
+    padding: 20px;
+    color: black;
+    background: white;
+    margin-top: 50px;
+  }
+
+  .margin-top-80 {
+    margin-top: 100px;
+  }
+  
+  body {
+  background: #f1f1f1;
+}
+
+/* Giving our navbar some padding and a background color */
+.navbar {
+    padding: 10px;
+    background: #a0bcee;
+    color: yellow;
+  }
+
+.navbar-brand {
+    padding: 10px;
+    background: #a0eead;
+}
+
