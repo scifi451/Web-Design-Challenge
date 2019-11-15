@@ -6,71 +6,59 @@
   <meta charset="UTF-8">
   <title>Web Visualization Dashboard</title>
 
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!-- Bring in our bootstrap stylesheet -->
+
  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<nav class="navbar navbar-dark bg-primary">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand" href="index.html">Latitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-
-
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="plot1.html">Max Temperature</a>
-              <a class="dropdown-item" href="plot2.html">Humidty</a>
-              <a class="dropdown-item" href="plot3.html">Cloudiness</a>
-              <a class="dropdown-item" href="plot4.html">Wind Speed</a>
-            </div>
-        </li>
-        <li class="nav-item active">
-                <a class="nav-link" href="comparison.html">Comparision</a>
-              </li>
-        <li class="nav-item active">
-                <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
-              </li>
-
-      </ul>
-      </form>
-    </div>
-  </nav>
-  </nav>
-  </nav>
-  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html">Weather</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>      
+    
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <a class="nav-link" href="index.html">Home</a> 
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="plot1.html">Max Temperature</a>
+                <a class="dropdown-item" href="plot2.html">Humidty</a>
+                <a class="dropdown-item active" href="plot3.html">Cloudiness</a>
+                <a class="dropdown-item" href="plot4.html">Wind Speed</a>
+              </div>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparision</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"href="data.html">Data </a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+<div class="container">
 
 
   
       <!-- Row 1 -->
       <div class="row">
-        <div class="col-12 col-sm-12 col-md-12">
+        <div class="col-10 col-sm-10 col-md-10">
              <div class="box2">
-                 <h1>Cloudiness</h1>
-         <center><img border="0" alt="plot3" src="Resources/plots/Fig3.png" width="400" height="400"></center> <p> Dr. McCoy: "He's dead, Jim."
-            Klingon Commander: Federation ship Enterprise, surrender and prepare to be boarded.  Capt. Picard: [indignantly, under his breath] That'll be the day!
-            Tuvok: Vulcans do not dance. Odo: You're still disgusting!  Quark: Wouldn't have it any other way!
-            Scotty: On Earth, we have a saying: Fool me once, shame on you. Fool me twice, shame on me.  Chekov: I know this saying. It was invented in Russia.
-           ?</p>
+                 <h1>Humidty</h1>
+         <center><img border="0" alt="plot2" src="Resources/plots/Fig3.png" width="400" height="400"></center><br> <p>For this plot  it is clear that the plot points are spread out all over 
+           the place and not clumped in one area. That means that you can draw any real connections between the city latitude and the cloudiness level.
+            </p>
         </div>
-
-
-
-
-
 </body>
 </html>

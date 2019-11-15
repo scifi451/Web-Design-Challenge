@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>HW11 - Web Visualizations</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <!-- toggle button that appears when links collapse -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="comparison.html">Comparison<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Visualizations
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="nats.html">Natural Rolls</a>
+                            <a class="dropdown-item" href="saves.html">Saving Throws</a>
+                            <a class="dropdown-item" href="per_dec.html">Persuasion vs. Deception</a>
+                            <a class="dropdown-item" href="HDYWTDT.html">HDYWTDT?</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+            </nav>
+            
+            <div class ='row'>
+                <!-- Box on the left at full screen-->
+                <div class ='col-sm-7'>
+                        <div class="jumbotron">
+                                <h1 class="display-5">Mighty Nein Visualization Project!</h1>
+                                <hr class="my-4">
+                                <p><small>Last Update: 11/16/2019</small></p>
+                                <p> This website was created as part of a homework assignment for the
+                                   <a href='https://bootcamp.umn.edu/data/'>University of Minnesota Data Analytics BootCamp</a>. The intention of the assignment was to demonstrate skills in CSS and HTML coding.  
+                                </p>
+                                <p> We were encouraged to find our own data and create visualizations to present on the website created for the assignment. As an added challenge, I decided to leverage <b>Crit Role Stats</b> taken from the wildly popular <b>Critical Role</b> web series.  
+                                    Thank you to Crit Role Stats for collecting such fun data to play with! </p>
+                                <p> For those unfortunate enough to never have heard of Critical Role - it is a web series where a group of professional voice actors get together and play D&D (a.k.a. Dungeons and Dragons).</p>
+                                
+                                <p>For this assignment, all visualizations on the website use stats generated from Critical Role's second campaign up to episode 83.</p>
+                                
+                                <p class="lead">
+                                  <a class="btn btn-primary btn-lg" href="https://critrole.com/" target="_blank" role="button">Critical Role</a>
+                                  <a class="btn btn-primary btn-lg" href="https://www.critrolestats.com/" target="_blank" role="button">Crit Role Stats</a>
+                                  <a class="btn btn-primary btn-lg" href="https://dnd.wizards.com/dungeons-and-dragons/what-is-dd" target="_blank" role="button">What Is D&D?</a>
+                                </p>
+                        </div>
+                    
+
+
+                </div>
+ 
+               
+<!-- Box on the right at full screen -->
+<div class ='col-sm-5'>
+    <div class="jumbotron">
+            <h1 class="display-5">Visualizations</h1>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <div class="thumbnail">
+                        <a href='nats.html'>
+                            <img src="Resources/Combined_percent.png" alt='Graph of Combined Natural Rolls' class="img-thumbnail">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <a href='saves.html'>
+                                <img src="Resources/saves.png" alt="Graph of Total Saving Throws" class="img-thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class='row align-items-center'>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <a href='per_dec.html'>
+                                <img src="Resources/Persuasion_deception.png" alt="Graph of Persuasion and Deception Rolls" class="img-thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <a href="HDYWTDT.html">
+                                <img src="Resources/HDYWTDT_count.png" alt="Graph of Killing Blows" class="img-thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+</body>
+</html>
